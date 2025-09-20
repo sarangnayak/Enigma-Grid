@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EnigmaGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/azeret-mono" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.0/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body>
 
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Main Floating Window -->
+  <div class="floating-window">
+    <div class="main-content">
+      <div class="header">
+        <h1>EnigmaGrid</h1>
+        <span class="toggle-btn">+ Show Seed</span>
+      </div>
+
+      <div class="container">
+        <!-- Grid -->
+        <div class="holder" id="gridHolder"></div>
+
+        <!-- Controls -->
+        <div class="controls">
+          <div class="input-group">
+            <label for="userInput">Original Message</label>
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button id="copyInput">Copy</button>
+          </div>
+
+          <div class="input-group">
+            <label for="output">Encrypted Output</label>
+            <span id="output"></span>
+            <button id="copyOutput">Copy</button>
+          </div>
+
+          <div class="input-group">
+            <label for="seed">Binary Key (Seed)</label>
+            <span id="seed"></span>
+            <button id="copySeed">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seed Window -->
+  <div class="seedwindow">
+    <textarea readonly></textarea>
+  </div>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About EnigmaGrid</h2>
+    <p>
+      EnigmaGrid is an interactive encryption simulator inspired by the WWII Enigma machine. 
+      Each 23x23 grid pattern generates a unique binary key that encrypts your message using XOR logic.
+    </p>
+    <h3>Uses:</h3>
+    <ul>
+      <li>Learn encryption concepts</li>
+      <li>Visualize dynamic binary keys</li>
+      <li>Experiment with XOR-based message encoding</li>
+      <li>Fun interactive educational tool</li>
+    </ul>
+    <p class="credit">Made by <span class="ml12">Sarang Nayak</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
