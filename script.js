@@ -4,12 +4,12 @@ const inBox = [];
 const outputSpan = document.getElementById('output');
 const seedSpan = document.getElementById('seed');
 const inputField = document.getElementById('userInput');
-const seedWindow = document.querySelector('.seedwindow');
+const seedWindow = document.getElementById('seedWindow');
 const seedTextarea = seedWindow.querySelector('textarea');
-const toggleBtn = document.querySelector('.toggle-btn');
-const copyInputBtn = document.getElementById('copyInput');
-const copyOutputBtn = document.getElementById('copyOutput');
-const copySeedBtn = document.getElementById('copySeed');
+const toggleBtn = document.getElementById('toggleSeedBtn');
+const copyInputBtn = document.getElementById('copyInputBtn');
+const copyOutputBtn = document.getElementById('copyOutputBtn');
+const copySeedBtn = document.getElementById('copySeedBtn');
 
 // Create 23x23 grid
 for(let i=0;i<529;i++){
@@ -59,7 +59,7 @@ function animateCells(){
       duration: 1.5,
       yoyo:true,
       repeat:-1,
-      delay: (i%23)*0.02
+      delay: ((i%23) + Math.floor(i/23)) * 0.02 // Stagger diagonally
     });
   });
 }
@@ -94,7 +94,6 @@ function animateCanvas(){
     ctx.fillStyle = `hsl(${p.hue},80%,70%)`;
     ctx.beginPath();
     ctx.moveTo(p.x, p.y);
-    // small star shape
     const spikes = 4;
     const outer = p.size*2;
     const inner = p.size;
@@ -136,25 +135,24 @@ window.addEventListener('resize',()=>{
 });
 
 // Animate credit "Made by Sarang Nayak"
-document.addEventListener('DOMContentLoaded', () => {
-  const creditWrapper = document.querySelector('.credit .ml12');
-  if(creditWrapper){
-    creditWrapper.innerHTML = creditWrapper.textContent.replace(/\S/g,"<span class='letter'>$&</span>");
-    anime.timeline({loop:true})
-      .add({
-        targets: '.credit .ml12 .letter',
-        translateY: [20,0],
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el,i)=> 50*i
-      }).add({
-        targets: '.credit .ml12 .letter',
-        translateY: [0,-20],
-        opacity: [1,0],
-        easing: "easeInExpo",
-        duration: 1000,
-        delay: (el,i)=> 30*i
-      });
-  }
-});
+const creditWrapper = document.querySelector('.credit .ml12');
+if(creditWrapper){
+  creditWrapper.innerHTML = creditWrapper.textContent.replace(/\S/g,"<span class='letter'>$&</span>");
+  anime.timeline({loop:true})
+    .add({
+      targets: '.credit .ml12 .letter',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 1200,
+      delay: (el,i)=> 50*i
+    }).add({
+      targets: '.credit .ml12 .letter',
+      translateY: [0,-20],
+      opacity: [1,0],
+      easing: "easeInExpo",
+      duration: 1000,
+      delay: (el,i)=> 30*i + 2000 // Added a longer pause at the top
+    });
+}
+
