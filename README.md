@@ -39,8 +39,8 @@
 Open the live demo at:  
 https://sarangnayak.github.io/Enigma-Grid/
 
- `assets/image1.png`
- `assets/image2.png`
+![Portfolio Hero Preview](.assets/image1.png)
+![Portfolio Hero Preview](.assets/image2.png)
 
 ---
 
