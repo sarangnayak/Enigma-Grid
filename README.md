@@ -69,9 +69,9 @@ npx http-server -c-1
 ```
 # then open http://localhost:8080
 ---
-License
+1. License
 MIT — see LICENSE file.
 Author
-Sarang Nayak — https://github.com/sarangnayak
-Live demo: https://sarangnayak.github.io/Enigma-Grid/
+2. Sarang Nayak — https://github.com/sarangnayak
+3. Live demo: https://sarangnayak.github.io/Enigma-Grid/
 ---
