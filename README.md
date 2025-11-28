@@ -1,10 +1,6 @@
 # Enigma-Grid
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-![HTML5](https://img.shields.io/badge/HTML-5-orange?logo=html5)  
-![CSS3](https://img.shields.io/badge/CSS-3-blue?logo=css3)  
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript)  
-![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?logo=greensock)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![HTML5](https://img.shields.io/badge/HTML-5-orange?logo=html5) ![CSS3](https://img.shields.io/badge/CSS-3-blue?logo=css3) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript) ![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?logo=greensock)
 
 **Live demo:** https://sarangnayak.github.io/Enigma-Grid/
 
