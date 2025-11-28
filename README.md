@@ -54,8 +54,6 @@ Enigma-Grid/
 ```
 ---
 
----
-
 ## Run locally
 
 1. Clone the repo
