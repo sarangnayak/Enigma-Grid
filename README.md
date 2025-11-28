@@ -44,4 +44,11 @@ https://sarangnayak.github.io/Enigma-Grid/
 ---
 
 ## Folder structure
-
+```
+Enigma-Grid/
+├── index.html # App UI
+├── style.css # Styles and theme
+├── script.js # Grid generation + XOR encryption + UI interactions
+├── assets/ # Images, icons, screenshots (optional)
+└── README.md
+```
