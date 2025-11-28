@@ -31,9 +31,7 @@
 3. Result bytes are Base64-encoded and shown as the encrypted output.
 
 > Note: This is an educational demo that visualizes XOR stream-cipher behavior. It is **not** intended as production cryptography.
-
 ---
-
 ## Demo / Preview
 
 Open the live demo at:  
@@ -42,7 +40,6 @@ https://sarangnayak.github.io/Enigma-Grid/
 ![](assets/image1.png)
 ![](assets/image2.png)
 ---
-
 ## Folder structure
 ```
 Enigma-Grid/
@@ -53,15 +50,12 @@ Enigma-Grid/
 └── README.md
 ```
 ---
-
 ## Run locally
-
 1. Clone the repo
    ```bash
    git clone https://github.com/sarangnayak/Enigma-Grid.git
    cd Enigma-Grid
    ```
-   
 2. Open index.html in your browser (or serve with a simple static server)
 # optional: using npm's http-server
 ```
