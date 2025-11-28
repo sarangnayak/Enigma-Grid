@@ -52,3 +52,19 @@ Enigma-Grid/
 ├── assets/ # Images, icons, screenshots (optional)
 └── README.md
 ```
+---
+
+---
+
+## Run locally
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/sarangnayak/Enigma-Grid.git
+   cd Enigma-Grid
+   
+2. Open index.html in your browser (or serve with a simple static server)
+# optional: using npm's http-server
+npx http-server -c-1 .
+# then open http://localhost:8080
+---
