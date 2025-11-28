@@ -39,7 +39,8 @@
 Open the live demo at:  
 https://sarangnayak.github.io/Enigma-Grid/
 
- `assets/preview.png`
+ `assets/image1.png`
+ `assets/image2.png`
 
 ---
 
