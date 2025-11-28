@@ -66,3 +66,11 @@ Enigma-Grid/
 npx http-server -c-1 .
 # then open http://localhost:8080
 ---
+API / Controls (UI reference)
+Original Message — type plaintext here.
+Copy — copy the plaintext or ciphertext to clipboard.
+Encrypted Output — Base64 result of XOR encryption.
+Binary Key (Seed) — 529-bit stream; can be shown/hidden.
+Show Seed — toggle to view seed bits for educational inspection.
+Reload page — regenerates a new grid & new seed.
+---
