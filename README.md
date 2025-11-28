@@ -60,17 +60,18 @@ Enigma-Grid/
    ```bash
    git clone https://github.com/sarangnayak/Enigma-Grid.git
    cd Enigma-Grid
+   ```
    
 2. Open index.html in your browser (or serve with a simple static server)
 # optional: using npm's http-server
-npx http-server -c-1 .
+```
+npx http-server -c-1
+```
 # then open http://localhost:8080
 ---
-API / Controls (UI reference)
-Original Message — type plaintext here.
-Copy — copy the plaintext or ciphertext to clipboard.
-Encrypted Output — Base64 result of XOR encryption.
-Binary Key (Seed) — 529-bit stream; can be shown/hidden.
-Show Seed — toggle to view seed bits for educational inspection.
-Reload page — regenerates a new grid & new seed.
+License
+MIT — see LICENSE file.
+Author
+Sarang Nayak — https://github.com/sarangnayak
+Live demo: https://sarangnayak.github.io/Enigma-Grid/
 ---
